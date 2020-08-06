@@ -25,6 +25,12 @@
   }, {
     "src": "images/icon192.png",
     "sizes": "192x192",
-    "type": "image/png"
+    "type": "image/png",
+    "purpose": "any maskable"
+  }, {
+    "src": "images/icon192-bw.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "monochrome"
   }]
 }
