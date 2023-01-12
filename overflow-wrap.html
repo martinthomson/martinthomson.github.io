@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<style>pre { width: 10ch; white-space: pre-wrap; border: 1px solid red; }</style>
+<style>
+  pre { width: 10ch; white-space: pre-wrap; border: 1px solid red; }
+  .arbitrary pre { overflow-wrap: arbitrary; }
+  .break-word pre { overflow-wrap: break-word; }
+</style>
+<div class="arbitrary">
 <h4>overflow-wrap: arbitrary</h4>
-<pre style="overflow-wrap: arbitrary;">abcdef ghijklmn</pre>
-<pre style="overflow-wrap: arbitrary;">abcdef-ghijklmn</pre>
-<pre style="overflow-wrap: arbitrary;">abcdefghijklmn</pre>
-<pre style="overflow-wrap: arbitrary;">abcdef/ghijklmn</pre>
+<pre>abcdef ghijklmn</pre>
+<pre>abcdef-ghijklmn</pre>
+<pre>abcdefghijklmn</pre>
+<pre>abcdef/ghijklmn</pre>
+<pre>abcdefghijkl/mn</pre>
+<pre>abcdef/ghijkl/mn</pre>
+</div>
+<div class="break-word">
 <h4>overflow-wrap: break-word</h4>
-<pre style="overflow-wrap: break-word;">abcdef ghijklmn</pre>
-<pre style="overflow-wrap: break-word;">abcdef-ghijklmn</pre>
-<pre style="overflow-wrap: break-word;">abcdefghijklmn</pre>
-<pre style="overflow-wrap: break-word;">abcdef/ghijklmn</pre>
+<pre>abcdef ghijklmn</pre>
+<pre>abcdef-ghijklmn</pre>
+<pre>abcdefghijklmn</pre>
+<pre>abcdef/ghijklmn</pre>
+<pre>abcdefghijkl/mn</pre>
+<pre>abcdef/ghijkl/mn</pre>
+</div>
